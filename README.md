@@ -5,7 +5,7 @@ This code accompany a blog [article](https://manuneuro.github.io/EmmanuelCalvet/
 To run this code, only standard library like `numpy`, `matplotlib` and `time` are needed.
 
 # Content
-This code contain three experiments, testing an ANN with various weights matrices initialization:
+This code contains three experiments, testing an ANN with various weights matrices initialization:
 - Percolation transition analogy
 - Seed impact on the percolation
 - Simulation of the output / variance of weight relationship.
