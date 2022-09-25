@@ -62,8 +62,7 @@ def percolation_sigmas(mu=-0.5, sigmas = [0.1, 1.5, 5], nbTrial=1):
         y = np.arange(0, 100)
         X, Y = np.meshgrid(x, y)
         
-        # Weight matrix
-        # W = net.W
+        # Plot matrix
         ax = axes[i]
         ax.set_title(f'$\mu$={mu}, $\sigma$={sigma}')
         ax.imshow(matrix_states,interpolation='none',cmap=plt.cm.gist_gray, origin='lower')  
@@ -104,8 +103,7 @@ def percolation_seed(mu=-0.5, sigma = 1.5,
         y = np.arange(0, 100)
         X, Y = np.meshgrid(x, y)
         
-        # Weight matrix
-        # W = net.W
+        # Plot matrix
         ax = axes[i]
         ax.set_title(f'seed={seed}')
         ax.imshow(matrix_states,interpolation='none',cmap=plt.cm.gist_gray, origin='lower')  
