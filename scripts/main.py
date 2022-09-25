@@ -1,7 +1,7 @@
 import sys
 from pathlib import Path
 # Get path for files
-path_root = Path(__file__).parents[1] # Adjust the number
+path_root = Path(__file__).resolve().parents[1] # Adjust the number
 sys.path.append(str(path_root)+'/model')
 import numpy as np
 import math as mt
