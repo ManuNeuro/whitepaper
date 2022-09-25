@@ -158,12 +158,11 @@ def simulation():
     ax.plot(sigmas, avgActivity, '.-')
     
     fig1 = plt.figure(figsize=(15,10))
-    ax1 = fig.add_subplot(1,1,1)
+    ax1 = fig1.add_subplot(1,1,1)
     ax1.set_xlabel(r'$\sigma(W)$')
-    ax1.set_ylabel('$<\sigma^2(O)>_k$')
+    ax1.set_ylabel('$\sigma^2(<Y>)_k$')
     ax.set_title(f'Variance of outputs, averaged over {nbTrial} trials')
     ax1.plot(sigmas, varActivity, '.-')
-    #fig.suptitle('ANN, nblayer:{0}, neuron/layer:{1}, nb of trial{2}'.format(nbHiddenLayer, inputSize, nbTrial))
     ax.legend(title="mu(W)={0}".format(mu))
     plt.show()
 
